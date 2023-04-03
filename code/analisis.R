@@ -19,3 +19,8 @@ bd_games <- read.csv("data/games.csv", header = TRUE, sep = ",")
 
 column_names <- names(bd_games)
 cat(column_names, sep = "\n")
+
+# Creando un vector numérico con el precio final de los vídeo juegos
+
+precio_final <- bd_games$price_final
+class(precio_final)
