@@ -15,4 +15,7 @@
 
 bd_games <- read.csv("data/games.csv", header = TRUE, sep = ",")
 
+# Creando vectores con los títulos del dataset
 
+column_names <- names(bd_games)
+cat(column_names, sep = "\n")
