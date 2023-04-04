@@ -24,3 +24,13 @@ cat(column_names, sep = "\n")
 
 precio_final <- bd_games$price_final
 class(precio_final)
+
+# Creando una condición lógica de precios bajos (ejemplo precios menores a 10.99) en el data frame original
+ 
+precios_bajos <- precio_final < 10.99
+
+bd_games_precios_bajos <- bd_games[precios_bajos, ]
+
+
+
+
