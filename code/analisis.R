@@ -196,5 +196,13 @@ data$price_final <- data$price_final / 100
 
 data_ordenada <- data[order(data$price_final, decreasing = TRUE), ]
 
+# 2. Mostrar el dataframe ordenado de manera ascendente y descendente
+
+# ascendente
+data_ordenada <- data[order(data$price_final, decreasing = FALSE), ]
+
+# descendente
+data_ordenada <- data[order(data$price_final, decreasing = TRUE), ]
+
 
 
