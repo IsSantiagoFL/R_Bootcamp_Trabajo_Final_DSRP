@@ -14,11 +14,15 @@ install.packages("DescTools")
 # Para importar archivos desde Excel
 install.packages("readxl")
 
+# Para generar graricos profesionales
+install.packages("ggplot2")
+
 
 # Carga de librerías necesarias
 
 library(DescTools)
 library(readxl)
+library(ggplot2)
 
 
 ################################################################################
@@ -210,5 +214,63 @@ data_ordenada <- data[order(data$price_final, decreasing = TRUE), ]
 
 summary(data$price_final)
 Mode(data$price_final)
+
+# 4. realizar las graficas
+
+#Histograma
+# Un histograma es una representación gráfica de la distribución de frecuencia de 
+# una variable numérica. Para crear un histograma en R, podemos utilizar la 
+# función ggplot() del paquete ggplot2:
+  
+ggplot(data, aes(x = price_final)) + 
+  geom_histogram(binwidth = 2, fill = "#2c3e50", color = "white") +
+  labs(x = "Precio final", y = "Frecuencia", title = "Histograma de precios finales")
+
+# En este ejemplo, hemos especificado que el eje X represente los valores de la 
+# columna price_final, y hemos agregado capas de estilo para definir el ancho de 
+# los bines y los colores de relleno y de borde.
+
+# Boxplot
+# Un boxplot (o diagrama de caja y bigotes) es un gráfico que muestra la 
+# distribución de los datos en un conjunto de valores numéricos. Los valores 
+# atípicos son representados como puntos individuales. Para crear un boxplot en R, 
+# podemos utilizar la función ggplot() junto con geom_boxplot():
+  
+ggplot(data, aes(y = price_final)) + 
+  geom_boxplot(fill = "#2c3e50", color = "white", outlier.color = "#e74c3c") +
+  labs(y = "Precio final", title = "Boxplot de precios finales")
+
+# En este ejemplo, hemos especificado que el eje Y represente los valores de la 
+# columna price_final, y hemos agregado capas de estilo para definir los colores 
+# de relleno, de borde y de los puntos atípicos.
+
+#Gráfico de densidad
+# Un gráfico de densidad es una representación gráfica de la distribución de 
+# probabilidad de una variable numérica continua. Para crear un gráfico de densidad
+# en R, podemos utilizar la función ggplot() junto con geom_density():
+
+ggplot(data, aes(x = price_final)) + 
+  geom_density(fill = "#2c3e50", color = "white") +
+  labs(x = "Precio final", y = "Densidad", title = "Gráfico de densidad de precios finales")
+
+# En este ejemplo, hemos especificado que el eje X represente los valores de la 
+# columna price_final, y hemos agregado capas de estilo para definir los colores 
+# de relleno y de borde.
+
+#Gráfico de violín
+# Un gráfico de violín es una combinación entre un boxplot y un gráfico de 
+# densidad. Para crear un gráfico de violín en R, podemos utilizar la función 
+# ggplot() junto con geom_violin():
+  
+ggplot(data, aes(x = "", y = price_final)) + 
+  geom_violin(fill = "#2c3e50", color = "white", alpha = 0.8) +
+  geom_boxplot(width = 0.1, fill = "#e74c3c", alpha = 0.4) +
+  labs(x = "", y = "Precio final", title = "Gráfico de violín de precios finales")
+
+# En este ejemplo, hemos especificado que el eje X no tenga etiquetas, y hemos 
+# agregado capas de estilo para definir los colores
+
+
+
 
 
