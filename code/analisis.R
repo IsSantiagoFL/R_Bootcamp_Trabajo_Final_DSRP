@@ -10,6 +10,8 @@
 
 # Para hallar la 'moda' de un vector numérico
 install.packages("DescTools")
+
+# Para importar archivos desde Excel
 install.packages("readxl")
 
 
@@ -204,5 +206,9 @@ data_ordenada <- data[order(data$price_final, decreasing = FALSE), ]
 # descendente
 data_ordenada <- data[order(data$price_final, decreasing = TRUE), ]
 
+# 3. Calcular el resumen estadístico de los datos con la función que corresponde
+
+summary(data$price_final)
+Mode(data$price_final)
 
 
