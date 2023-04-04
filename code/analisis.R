@@ -10,10 +10,13 @@
 
 # Para hallar la 'moda' de un vector numérico
 install.packages("DescTools")
+install.packages("readxl")
+
 
 # Carga de librerías necesarias
 
 library(DescTools)
+library(readxl)
 
 
 ################################################################################
@@ -175,4 +178,23 @@ df_pruebas <- df_pruebas[df_pruebas$positive_ratio > 95 & df_pruebas$user_review
 # 13 - 16. cambinar de nombre al data frame
 
 df_mejores_juegos_linux <- df_pruebas 
+
+################################################################################
+
+### P2. Importar Datos
+
+# 1. Importar Datos desde Excel y Ordenar los datos con la función order(), de preferencia para la variable Price_final
+
+data <- read_excel("data/games_excel.xlsx")
+
+# corrigiendo los datos de precio orginal y precio final
+
+data$price_original <- data$price_original / 100 
+data$price_final <- data$price_final / 100
+
+# Ordenando los datos por precio final
+
+data_ordenada <- data[order(data$price_final, decreasing = TRUE), ]
+
+
 
