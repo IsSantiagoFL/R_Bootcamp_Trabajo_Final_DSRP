@@ -16,12 +16,9 @@ https://www.kaggle.com/datasets/antonkozyriev/game-recommendations-on-steam
 3. Crear una condición lógica de precios bajos (ejemplo precios menores a 10.99)
 4. Sumar 5 al vector creado
 5. Dividir la puntuación entre 2
-6. Calcular la media, moda, max, min de los datos de tipo numérico (Verficar con
-la función Class)
-7. Crear un dataFrame de 13 col con la base de datos y guardar en una nueva
-variable
-8. Agregar filas y columnas a la matriz (Sugerencia una columna de "1" y una fila
-de datos de un juego de tu preferencia)
+6. Calcular la media, moda, max, min de los datos de tipo numérico (Verficar con la función Class)
+7. Crear un dataFrame de 13 col con la base de datos y guardar en una nueva variable
+8. Agregar filas y columnas a la matriz (Sugerencia una columna de "1" y una fila de datos de un juego de tu preferencia)
 9. Agregar columna de "1"
 10. Agregar fila con los datos de un video juego de tu preferencia
 11. Eliminar filas y columnas de la matriz
@@ -33,19 +30,14 @@ de datos de un juego de tu preferencia)
 
 ### P2. Importar Datos
 
-1. Importar Datos desde Excel y Ordenar los datos con la función order(), de
-preferencia para la variable Price_final
+1. Importar Datos desde Excel y Ordenar los datos con la función order(), de preferencia para la variable Price_final
 2. Mostrar el dataframe ordenado de manera ascendente y descendente
 3. Calcular el resumen estadístico de los datos con la función que corresponde
 4. Realizar las graficas
 
 
 ### P3. Programación
-1. Implementar una función para la multiplicación de dos vectores(xy) y probar
-con valores
-2. Implementar una función que muestre el resultado de la ecuación de Bhaskara y
-probar con valores.
-3. Se quiere conocer la media muestral de n observaciones obtenidas
-independientemente de una distribución normal con media = 0 y varianza =1.
-3.1. Realizar una simulación, luego calcular las estadísticas descriptivas
-aplicando la función que corresponde y graficar.
+1. Implementar una función para la multiplicación de dos vectores(xy) y probar con valores
+2. Implementar una función que muestre el resultado de la ecuación de Bhaskara y probar con valores.
+3. Se quiere conocer la media muestral de n observaciones obtenidas independientemente de una distribución normal con media = 0 y varianza =1.
+3.1. Realizar una simulación, luego calcular las estadísticas descriptivas aplicando la función que corresponde y graficar.
