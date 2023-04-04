@@ -34,6 +34,9 @@ bd_games_precios_bajos <- bd_games[precios_bajos, ]
 # 4. Sumar 5 al vector creado: precio_final
 precio_final_aumentado <- precio_final + 5
 
+# 5. Dividir la puntuación entre dos
+
+nueva_puntuación <- bd_games$positive_ratio /2
 
 
 
