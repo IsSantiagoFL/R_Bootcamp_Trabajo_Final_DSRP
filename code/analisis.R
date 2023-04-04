@@ -140,5 +140,13 @@ cat(paste("Para la columna x:\n",
 
 df_pruebas <- bd_games
 
+# 8. Agregar una columna de "1" y una fila de un Juego nuevo.
+df_pruebas$col1 <- 1 
+data_new_game <- c (000000, "Nuevo Juego", "2023-04-03", FALSE, FALSE, TRUE, "Very Positive", 100, 40000, 0.00, 0.00, 0, TRUE, 1)
+df_pruebas <- rbind(df_pruebas, data_new_game)
+
+
+
+
 # Filtrar el data frame por las filas que contengan "abc" en la columna "letras"
-# df_filtrado_portal <- subset(bd_games, grepl("Tunche", title))
+# df_filtrado_portal <- subset(bd_games, grepl("Counter-Strike", title))
