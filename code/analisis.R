@@ -142,8 +142,17 @@ df_pruebas <- bd_games
 
 # 8, 9 y 10. Agregar una columna de "1" y una fila de un Juego nuevo.
 df_pruebas$col1 <- 1 
-data_new_game <- c (000000, "Nuevo Juego", "2023-04-03", FALSE, FALSE, TRUE, "Very Positive", 100, 40000, 0.00, 0.00, 0, TRUE, 1)
+data_new_game <- c (000000, "Nuevo Juego", "2023-04-03", "false", "false", "true", "Very Positive", 100, 40000, 0.00, 0.00, 0, TRUE, 1)
 df_pruebas <- rbind(df_pruebas, data_new_game)
+
+# 11. Eliminar filas y columnas de la matriz
+
+# Elimar la columna 'app_id'
+df_pruebas <- subset(df_pruebas, select = -app_id)
+
+# Eliminar filas: eliminar los juegos que no esten disponibles para Linux:
+df_pruebas <- subset(df_pruebas, linux != "false")
+
 
 
 
