@@ -172,11 +172,7 @@ df_pruebas <- subset(df_pruebas, price_final < 10.01, select = -linux)
 
 df_pruebas <- df_pruebas[df_pruebas$positive_ratio > 95 & df_pruebas$user_reviews > 10000, ]
 
+# 13 - 16. cambinar de nombre al data frame
 
+df_mejores_juegos_linux <- df_pruebas 
 
-
-
-
-
-# Filtrar el data frame por las filas que contengan "abc" en la columna "letras"
-# df_filtrado_portal <- subset(bd_games, grepl("Counter-Strike", title))
