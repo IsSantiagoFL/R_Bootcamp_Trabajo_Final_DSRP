@@ -136,6 +136,9 @@ cat(paste("Para la columna x:\n",
           "Su valor mínimo es: ", stats_discount$min, "\n",
           "Su valor máximo es: ", stats_discount$max))
 
+# 7. Crear un dataFrame de 13 col con la base de datos y guardar en una nueva variable
 
+df_pruebas <- bd_games
 
-
+# Filtrar el data frame por las filas que contengan "abc" en la columna "letras"
+# df_filtrado_portal <- subset(bd_games, grepl("Tunche", title))
