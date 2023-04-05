@@ -1,8 +1,8 @@
 ################################################################################
-# Script: analisis_game.R
+# Script: analisis.R
 # Autor: Santiago Ismael Flores Chávez
 # Fecha de creación: 3 de abril de 2023
-# Descripción: Analisis de la base de datos game, link de la base en el archivo README
+# Descripción: ...
 # https://github.com/IsSantiagoFL/R_Bootcamp_Trabajo_Final_DSRP
 
 ################################################################################

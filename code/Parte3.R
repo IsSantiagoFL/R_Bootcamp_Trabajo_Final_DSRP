@@ -2,7 +2,7 @@
 # Script: Parte3.R
 # Autor: Santiago Ismael Flores Chávez
 # Fecha de creación: 3 de abril de 2023
-# Descripción:
+# Descripción: Parte 3 del documento de finalización del rpograma bootcamp R
 # https://github.com/IsSantiagoFL/R_Bootcamp_Trabajo_Final_DSRP
 
 
